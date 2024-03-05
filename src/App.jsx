@@ -203,7 +203,7 @@ function App() {
             </div>
 
             <div className="flex justify-between">
-              <div className="font-bold">2024</div>
+              <div className="font-bold">{e.year}</div>
               <div>
                 <a href="" className="underline">
                   Case Study
