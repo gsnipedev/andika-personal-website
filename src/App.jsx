@@ -7,6 +7,7 @@ function App() {
   const [theme, setTheme] = useState("DARK");
   const [projects, setProjects] = useState(projects_data);
   const [socials, setSocials] = useState(social_data);
+  const [showMenu, setShowMenu] = useState(false);
 
   function toggleTheme() {
     setTheme((prev) => {
@@ -70,7 +71,7 @@ function App() {
 
             <button
               className="block lg:hidden border border-gray-400 dark:border-neutral-400 px-4 py-2"
-              onClick={toggleTheme}
+              onClick={() => setShowMenu((prev) => !prev)}
             >
               MENU
             </button>
@@ -83,45 +84,47 @@ function App() {
             </button>
           </div>
 
-          <div className="grid grid-cols-2 divide-x divide-gray-400 dark:divide-neutral-400 lg:hidden border-b border-gray-400 dark:border-neutral-400">
-            <div className="uppercase p-5 space-y-4">
-              <p className="font-bold">Navigation</p>
+          {showMenu && (
+            <div className="grid grid-cols-2 divide-x divide-gray-400 dark:divide-neutral-400 lg:hidden border-b border-gray-400 dark:border-neutral-400">
+              <div className="uppercase p-5 space-y-4">
+                <p className="font-bold">Navigation</p>
 
-              <div>
-                <a href="#andika-info" className="underline">
-                  INFO
-                </a>
+                <div>
+                  <a href="#andika-info" className="underline">
+                    INFO
+                  </a>
+                </div>
+                <div>
+                  <a href="#andika-projects" className="underline">
+                    PROJECTS[6]
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="/resume/Andika-Wahyudi-CV-2024.pdf"
+                    className="underline"
+                  >
+                    RESUME
+                  </a>
+                </div>
               </div>
-              <div>
-                <a href="#andika-projects" className="underline">
-                  PROJECTS[6]
-                </a>
-              </div>
-              <div>
-                <a
-                  href="/resume/Andika-Wahyudi-CV-2024.pdf"
-                  className="underline"
-                >
-                  RESUME
-                </a>
+
+              <div className="uppercase p-5 space-y-4">
+                <p className="font-bold">Navigation</p>
+
+                <div>
+                  <a href="mailto:andikawpb200@gmail.com" className="underline">
+                    EMAIL ME
+                  </a>
+                </div>
+                <div>
+                  <a href="#andika-contact" className="underline">
+                    CONTACT
+                  </a>
+                </div>
               </div>
             </div>
-
-            <div className="uppercase p-5 space-y-4">
-              <p className="font-bold">Navigation</p>
-
-              <div>
-                <a href="mailto:andikawpb200@gmail.com" className="underline">
-                  EMAIL ME
-                </a>
-              </div>
-              <div>
-                <a href="#andika-contact" className="underline">
-                  CONTACT
-                </a>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mx-10 xl:mx-0">
