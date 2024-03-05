@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "Linkedin",
+        "url" : "https://www.linkedin.com/in/andika-wahyudi/",
+        "icon" : "/icon/linkedin.svg"
+    },
+    {
+        "name" : "Instagram",
+        "url" : "https://www.instagram.com/andika_wahyudi_",
+        "icon" : "/icon/instagram.svg"
+    },
+    {
+        "name" : "WhatsApp",
+        "url" : "https://wa.me/082382878591",
+        "icon" : "/icon/whatsapp.svg"
+    }
+]

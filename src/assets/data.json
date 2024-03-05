@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Sysmatic Ticketing",
+        "year" : 2024,
+        "thumbnail_url" : "/project_images/sysmatic_ticketing/ticket_page.png"
+    },
+    {
+        "title": "Visitor Management System",
+        "year" : 2024,
+        "thumbnail_url" : "/project_images/vms/thumbnail.png"
+    },
+    {
+        "title": "Manless Parking",
+        "year" : 2023,
+        "thumbnail_url" : "/project_images/manless_parking/thumbnail.png"
+    },
+    {
+        "title": "Manless Ticketing",
+        "year" : 2023,
+        "thumbnail_url" : "/project_images/manless_ticketing/thumbnail.jpg"
+    },
+    {
+        "title": "Visitor Management System",
+        "year" : 2023,
+        "thumbnail_url" : "/project_images/vms/thumbnail.png"
+    },
+    {
+        "title": "Sistem Ticketing (discontinue)",
+        "year" : 2023,
+        "thumbnail_url" : "/project_images/sistem_ticketing/thumbnail.png"
+    }
+]
