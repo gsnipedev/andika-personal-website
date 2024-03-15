@@ -5,6 +5,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes animateGradientText {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.gradient-text {
+    background: linear-gradient(
+        to right,
+        #FFC837 20%,
+        #FF6CAB 30%,
+        #B47EFF 70%,
+        #3B8BEB 80%,
+        #FFC837 90%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: animateGradientText 2s linear infinite;
+}
+
 svg {
     fill: currentColor;
   }

@@ -33,8 +33,11 @@ function App() {
         <div>
           <div className="flex justify-between items-center border-y border-gray-400 dark:border-neutral-400 py-5 px-5 lg:px-0">
             <div className="hidden lg:block space-x-4">
-              <a href="#andika-info" className="underline">
-                About Mex
+              <a
+                href="#andika-info"
+                className="font-bold font-[consolas] gradient-text gradient-border"
+              >
+                4B0ut M3
               </a>
               <span>/</span>
               <a href="#andika-projects" className="underline">
@@ -166,9 +169,12 @@ function App() {
             </div>
 
             <div className="space-y-1 font-[consolas] bg-white dark:bg-black p-4 border border-gray-300 dark:border-slate-700 rounded-md">
-              <div>Console Output (AndikaClients.class):</div>
+              <div>Windows PowerShell</div>
               <hr />
               <br />
+
+              <p>{"PS C:\\Users\\andik> javac AndikaClients.java"}</p>
+              <p>{"PS C:\\Users\\andik> java AndikaClients"}</p>
 
               <p>
                 {"["}
